@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/ovalDone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ProgressBar
+                android:id="@+id/vertical_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:max="400"
+                android:progressDrawable="@drawable/horizontal_progress_bar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:id="@+id/ovalOne"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_oval_ring"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toStartOf="@+id/cons"
+            app:layout_constraintTop_toTopOf="@+id/cons" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="paso 1"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ovalOne" />
+
+
+        <ImageView
+            android:id="@+id/ovalTwo"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="85dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toEndOf="@+id/ovalOne"
+            app:layout_constraintTop_toTopOf="@+id/cons" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="paso 2"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toStartOf="@+id/ovalTwo"
+            app:layout_constraintTop_toBottomOf="@+id/ovalOne" />
+
+        <ImageView
+            android:id="@+id/ovalThree"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="85dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toEndOf="@+id/ovalTwo"
+            app:layout_constraintTop_toTopOf="@+id/cons" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="paso 3"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toStartOf="@+id/ovalThree"
+            app:layout_constraintTop_toBottomOf="@+id/ovalOne" />
+
+
+        <ImageView
+            android:id="@+id/ovalFour"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="85dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toEndOf="@+id/ovalThree"
+            app:layout_constraintTop_toTopOf="@+id/cons" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="paso 4"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toStartOf="@+id/ovalFour"
+            app:layout_constraintTop_toBottomOf="@+id/ovalOne" />
+
+
+        <ImageView
+            android:id="@+id/ovalFive"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="85dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toEndOf="@+id/ovalFour"
+            app:layout_constraintTop_toTopOf="@+id/cons" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="paso 5"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toStartOf="@+id/ovalFive"
+            app:layout_constraintTop_toBottomOf="@+id/ovalOne" />
+
+        <ImageView
+            android:id="@+id/ovalFinal"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="85dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toEndOf="@+id/ovalFive"
+            app:layout_constraintTop_toTopOf="@+id/cons" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="paso 6"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toStartOf="@+id/ovalFinal"
+            app:layout_constraintTop_toBottomOf="@+id/ovalOne" />
+
+        <ImageView
+            android:id="@+id/ovalDone"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="85dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintStart_toEndOf="@+id/ovalFinal"
+            app:layout_constraintTop_toTopOf="@+id/cons" />
+
+        <ImageView
+            android:id="@+id/imageViewDone"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_check"
+            app:layout_constraintBottom_toBottomOf="@+id/ovalDone"
+            app:layout_constraintEnd_toEndOf="@+id/ovalDone"
+            app:layout_constraintStart_toStartOf="@+id/ovalDone"
+            app:layout_constraintTop_toTopOf="@+id/ovalDone" />
+
+        <TextView
+            android:id="@+id/textViewDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="paso ok"
+            app:layout_constraintBottom_toBottomOf="@+id/cons"
+            app:layout_constraintEnd_toEndOf="@+id/ovalDone"
+            app:layout_constraintStart_toStartOf="@+id/ovalDone"
+            app:layout_constraintTop_toBottomOf="@+id/ovalOne" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
